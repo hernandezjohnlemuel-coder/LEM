@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mabini, Batangas Tourism</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Script -->
+  <script defer src="script.js"></script>
+
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #c5c5da;
+      color: #a7e76c;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Logo Styles */
+    .logo {
+      font-size: 32px;
+      font-weight: 600;
+      color: #ececec;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      background: linear-gradient(45deg, #4caf50, #8bc34a); /* Green Gradient */
+      padding: 10px 20px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo i {
+      margin-right: 10px;
+      font-size: 24px;
+    }
+
+    /* Header Styles */
+    header {
+      background: #8dc8e4;
+      padding: 20px;
+      color: rgb(250, 246, 246);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    header nav ul li {
+      margin-left: 20px;
+    }
+    header nav ul li a {
+      color: #0f0404;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    header nav ul li a:hover {
+      color: #060803;
+    }
+
+    /* Banner Section */
+    .banner {
+      background: url('https://images.unsplash.com/photo-1516228283029-0e92e2f130ba') center/cover no-repeat;
+      height: 400px;
+      color: rgb(26, 10, 10);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .banner h1 {
+      font-size: 50px;
+      font-weight: 700;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    }
+    .banner p {
+      font-size: 20px;
+      font-weight: 300;
+      margin-top: 10px;
+    }
+
+    /* Attractions Section */
+    .attractions {
+      background: #0a0404;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .attractions h2 {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .carousel {
+      position: relative;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    .carousel-container {
+      display: flex;
+      overflow: hidden;
+    }
+    .slide {
+      min-width: 100%;
+      transition: transform 0.5s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .slide img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(207, 191, 191, 0.3);
+    }
+    .slide p {
+      font-size: 18px;
+      font-weight: 500;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    /* Plan Visit Section */
+    .visit {
+      background: #8bc34a;
+      padding: 40px;
+      text-align: center;
+      color: rgb(19, 14, 14);
+    }
+    .visit-btn {
+      padding: 15px 30px;
+      background-color: #4caf50;
+      color: rgb(8, 3, 3);
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 30px;
+      transition: background-color 0.3s ease;
+    }
+    .visit-btn:hover {
+      background-color: #388e3c;
+    }
+
+    /* Google Map */
+    .map {
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Footer */
+    footer {
+      background: #2e3b4e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    footer p {
+      margin: 10px 0;
+    }
+    footer .socials a {
+      margin: 0 10px;
+      color: #fff;
+      font-size: 24px;
+      transition: color 0.3s ease;
+    }
+    footer .socials a:hover {
+      color: #8bc34a;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+<header>
+  <div class="logo">
+    <img src="Asset/logo.jpg" alt= />
+    <span></span>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#attractions">Attractions</a></li>
+      <li><a href="#visit">Plan Visit</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- Banner -->
+  <section class="banner">
+    <h1>Discover Mabini, Batangas</h1>
+    <p>Dive into clear waters, hike mountain trails, and savor local cuisine.</p>
+  </section>
+
+  <!-- Attractions Carousel -->
+<section class="attractions" id="attractions">
+  <h2>Top Attractions</h2>
+  <div class="carousel">
+    <div class="carousel-container">
+      <div class="slide active">
+        <img src="Asset/channels4_banner.jpg" alt="Anilao Diving Spot" />
+        <p><strong>Anilao Diving Spots</strong> – A diver’s dream with vibrant reefs.</p>
+      </div>
+      <div class="slide">
+        <img src="Asset/gulugod.jpg" alt="Mt. Gulugod Baboy" />
+        <p><strong>Mt. Gulugod Baboy</strong> – Hike to amazing views of the coast.</p>
+      </div>
+      <div class="slide">
+        <img src="Asset/anilao beach.jpg" alt="Beach spot mabini" />
+        <p><strong>Beach spot Mabini</strong> – White sand escape by boat.</p>
+      </div>
+      <div class="slide">
+        <img src="Asset/lemtzy.jfif" alt="Fishing spot" />
+        <p><strong>Fishing spot</strong> – Mabini’s classic slow-cooked fish dish.</p>
+      </div>
+    </div>
+    <button id="prev" class="carousel-btn">&#10094;</button>
+    <button id="next" class="carousel-btn">&#10095;</button>
+  </div>
+</section>
+
+
+  <!-- Plan Visit -->
+  <section class="visit" id="visit">
+    <h2>Plan Your Visit</h2>
+    <a href="#contact" class="visit-btn">Let's Go!</a>
+  </section>
+
+  <!-- Google Map -->
+  <section class="map">
+    <h2>Where is Mabini?</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.7085807039987!2d120.92233211483865!3d13.755438690347206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd1d07f248ef75%3A0x2ed4db262b6d9a!2sMabini%2C%20Batangas!5e0!3m2!1sen!2sph!4v1694891234567" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer id="contact">
+  <p>📧 info@mabinitour.ph | 📞 +63 912 345 6789</p>
+  <div class="socials">
+    <a href="https://facebook.com/mabinitour" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://twitter.com/mabinitour" target="_blank" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://instagram.com/mabinitour" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+  <p>&copy; 2025 Mabini Tourism. All rights reserved.</p>
+</footer>
